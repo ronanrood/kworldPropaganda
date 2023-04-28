@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 *{
     padding: 0px;
     margin: 0px;
@@ -9,10 +9,11 @@ body{
     animation: 1s blur linear ;
 }
 header{
-    background-color: #2C2F30;
+    background-color: transparent;
     width: 100%;
     height: 70px;
     display: flex;
+    position: absolute;
 }
 .navContainer{
     width: 100%;
@@ -41,7 +42,7 @@ header{
     justify-content: center;
 }
 .btt-navBar > a:hover{
-    background-color: #3F4345;
+    background-color: #FF5B50;
     border-bottom: 5px solid #2C2F30;
 }
 
@@ -51,7 +52,7 @@ header{
     justify-content: center;
 }
 .imgBackgrond>img{
-    height: 500px;
+    height: 660px;
     width: 100%;
 }
 @keyframes blur{
@@ -107,4 +108,64 @@ header{
 }
 .clientCarrosel-container:hover .clientCarrosel-content {
   animation-play-state: paused;
+}
+.titleClientCarrosel{
+    background-color: #000;
+    padding: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.titleClientCarrosel > h1{
+    color: #fff;
+    font-family: montserrat;
+    font-weight: 400;
+}
+.titleClientCarrosel > h1::selection{
+    color: #FF5B50;
+}
+.titleClientCarrosel > h1 > strong { 
+    color: #FF5B50;
+}
+.titleClientCarrosel > h1 > strong:hover{
+    color: #fff;
+    background-color: #FF5B50;
+}
+.titleClientCarrosel > img{
+    height: 30px;
+}
+.aboutUs-container{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 60px;
+}
+.titleAboutUs > h1{
+    color: #fff;
+    padding-bottom: 5px;
+    border-bottom: #FF5B50 solid 2px;
+    font-family: montserrat;
+    font-weight: 400;
+}
+.aboutUs-content{
+    display: flex;
+    width: auto;
+    /* flex-direction: row-reverse; */
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+}
+.aboutUs-content > img{
+    height: 250px;
+    font-family: montserrat;
+    font-weight: 400;
+}
+.textAboutUs > p {
+    width: 640px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: roboto;
 }
