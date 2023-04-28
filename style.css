@@ -6,13 +6,13 @@
 }
 body{
     background-color: #3F4345;
+    animation: 1s blur linear ;
 }
 header{
     background-color: #2C2F30;
     width: 100%;
     height: 70px;
     display: flex;
-
 }
 .navContainer{
     width: 100%;
@@ -51,8 +51,16 @@ header{
     justify-content: center;
 }
 .imgBackgrond>img{
-    height: 550px;
+    height: 500px;
     width: 100%;
+}
+@keyframes blur{
+    from{
+        filter: opacity(50%);
+    }
+    to{
+        filter: blur(100%);
+    }
 }
 .clientCarrosel-container{
     height: 100px;
@@ -89,17 +97,14 @@ header{
   content: "";
   z-index: 2;
 }
-
 .clientCarrosel-container:before {
   left: 0;
   background: linear-gradient(to left, rgba(255, 255, 255, 0), #000);
 }
-
 .clientCarrosel-container:after {
   right: 0;
   background: linear-gradient(to right, rgba(255, 255, 255, 0), #000);
 }
-
 .clientCarrosel-container:hover .clientCarrosel-content {
   animation-play-state: paused;
 }
