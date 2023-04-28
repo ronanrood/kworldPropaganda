@@ -41,3 +41,17 @@ header{
     background-color: #3F4345;
     border-bottom: 5px solid #2C2F30;
 }
+
+.imgBackgrond{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imgBackgrond>img{
+    height: 550px;
+    width: 100%;
+}
+.client-carrosel{
+    background-color: black;
+    height: 100px;
+}
