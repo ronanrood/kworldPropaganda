@@ -4,6 +4,9 @@
     margin: 0px;
     box-sizing: border-box;
 }
+body{
+    background-color: #3F4345;
+}
 header{
     background-color: #2C2F30;
     width: 100%;
@@ -51,7 +54,52 @@ header{
     height: 550px;
     width: 100%;
 }
-.client-carrosel{
-    background-color: black;
+.clientCarrosel-container{
     height: 100px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #000;
+    white-space: nowrap;
+    position: relative;
+}
+.clientCarrosel-content{
+    display: inline-block;
+    animation: 100s slide infinite linear;
+}
+.clientCarrosel-content > img{
+    height: 80px;
+    margin: 0 40px;
+    border-radius: 100%;
+}
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+.clientCarrosel-container:before,
+.clientCarrosel-container:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.clientCarrosel-container:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #000);
+}
+
+.clientCarrosel-container:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #000);
+}
+
+.clientCarrosel-container:hover .clientCarrosel-content {
+  animation-play-state: paused;
 }
