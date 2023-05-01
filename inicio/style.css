@@ -43,7 +43,6 @@ header {
   display: flex;
   justify-content: space-around;
   width: 400px;
-  
 }
 .btt-navBar > a {
   color: #fff;
@@ -60,7 +59,10 @@ header {
   background-color: #ff5b50;
   border-bottom: 5px solid #2c2f30;
 }
-
+.btt-navBar > a:focus {
+    background-color: #ff5b50;
+    border-bottom: 5px solid #2c2f30;
+  }
 .imgBackgrond {
   display: flex;
   align-items: center;
