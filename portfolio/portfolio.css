@@ -196,3 +196,50 @@ footer {
   align-items: center;
   margin-top: 100px;
 }
+@media screen and (max-width:600px) {
+  header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navContainer {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-container {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .footer-content {
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 30px 0px;
+  }
+  .footer-content > img {
+    display: none;
+  }
+  .center-footer {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .center-footer > a{
+    height: 50px;
+    width: 100vw;
+    margin: 0px;
+  }
+  .content--footer {
+    width: 100vw;
+    margin-left: 20px;
+  }
+  .tilePortfolio{
+    flex-direction: column;
+    column-gap: 0px;
+    row-gap: 10px;
+    text-align: center;
+  }
+  }
