@@ -223,6 +223,9 @@ footer {
   .footer-content > img {
     display: none;
   }
+  .btt-footer{
+    flex-wrap: wrap;
+  }
   .center-footer {
     flex-wrap: wrap;
     margin-bottom: 50px;
