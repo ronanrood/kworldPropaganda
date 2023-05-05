@@ -415,7 +415,9 @@ footer{
   }
 }
 @media screen and (max-width:520px){
-  
+  .navContainer{
+    padding-top: 10px;
+  }
   .textAboutUs > p{
     width: 400px;
     height: 200px;
